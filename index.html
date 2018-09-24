@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Products</title>
+    <link rel="stylesheet" href="css/cssreset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav id="logoNav"> 
+                <a href="#home" class="logo">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+            </nav>
+            <nav class="nav-collapse"  id="menuNav">
+                <ul>
+                    <li class="menu-item"><a href="#services">Serviços</a></li>
+                    <li class="menu-item"><a href="#featured">Destaque</a></li>
+                    <li class="menu-item"><a href="#specs">Detalhes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container container-bottom">
+        <section id="home">
+            <div class="w3-content w3-display-container">
+                <img class="carousel" src="images/banner1.jpg">
+                <img class="carousel" src="images/banner2.jpg">
+                <img class="carousel" src="images/banner3.jpg">
+                <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                </div>
+            </div>
+            <p>O Google app mantém você atualizado sobre seus assuntos favoritos. Encontre respostas rápidas, explore seus interesses e receba atualizações sobre eles no seu feed. Quanto mais você usa o Google app, melhor ele fica.</p>
+            <a href="#">Ler mais ></a>
+        </section>
+
+        <hr>
+
+        <section id="services">
+            <h1>Serviços</h1>
+            <p>Navegue em uma lista extensiva de produtos do Google, desenvolvidos para ajudar você a jogar, organizar-se, encontrar respostas, manter contato com melhor do google.</p>
+            <div class="service">
+                <img src="images/service1.jpg" alt="icone">
+                <h2>Cloud</h2>
+                <p>Ofereça todos os recursos necessários com o Google Cloud Platform.</p>
+            </div>
+            <div class="service">
+                <img src="images/service2.jpg" alt="icone">
+                <h2>Drive</h2>
+                <p>Um lugar seguro para todos os seus arquivos.</p>
+            </div>
+            <div class="service">
+                <img src="images/service3.jpg" alt="icone">
+                <h2>Gmail</h2>
+                <p>A facilidade e simplicidade do Gmail, disponível em vários dispositivos.</p>
+            </div>
+            <button class="button">Ver todos</button>
+        </section>
+
+        <hr>
+
+        <section id="featured">
+            <h1>Produto em destaque</h1>
+            <div class="product">
+                <img src="images/product.jpg">
+                <h2 class="name">G suite Premium</h2>
+                <h2 class="price">R$ 100,00</h2>
+                <p class="description">
+                Um pacote com tudo que você precisa para trabalhar melhor e de modo integrado no seu computador, smartphone ou tablet.</p>
+                <button class="button">Comprar</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <img src="images/in-house-banner.jpg">
+        </section>
+
+        <hr>
+
+        <section id="specs">
+            <h1>Detalhes</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Função</th>
+                        <th>Descrição</th>
+                        <th>Apps</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Conectar</td>
+                        <td>Fale com seus colegas de trabalho em qualquer lugar.</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Criar</td>
+                        <td>Tudo que você precisa para colocar seu projeto em prática.</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Acessar</td>
+                        <td>Armazene arquivos e encontre o que você precisa rapidamente.</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Controlar</td>
+                        <td>Gerencie usuários, dispositivos e dados com segurança e facilidade.</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.rawgit.com/viljamis/responsive-nav.js/master/responsive-nav.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>
